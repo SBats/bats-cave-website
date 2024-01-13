@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bats Cave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <meta name="description" content="Bats Cave is a video games creator and publisher">
 
@@ -21,10 +24,45 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="bg-slate-900 text-white h-svh font-sans flex flex-col">
 
-  <!-- Add your site or application content here -->
-  <p class="text-3xl font-bold underline">Hello world! This is HTML5 Boilerplate.</p>
+  <header>
+    <div class="container m-auto p-8">
+      <img class="max-h-40 m-auto" src="./img/BatsCaveLogo.svg" alt="Bats Cave logo">
+      <div class="text-center mt-10">
+        <h1 class="font-titan-one text-6xl">Bats Cave</h1>
+        <p class="text-xl">Video games creator and publisher</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-10 flex-1">
+    <section class="p-8 container m-auto">
+      <h2 class="font-titan-one text-4xl pb-2 border-b-white border-b-2">Games</h2>
+      <div class="mt-4 p-4 bg-slate-950">
+        <div>
+          <!-- <img src="./img/InariRun.png" alt="Inari Run screenshot"> -->
+        </div>
+        <div>
+          <h3 class="font-titan-one text-2xl text-orange-500">Inari Run</h3>
+          <p>A simple infinite runner for the old-school platformers lovers</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-10 bg-slate-950">
+    <div class="container m-auto p-8 md:flex md:flex-row md:flex-wrap">
+      <nav class="md:flex-1">
+        <a class="m-4 hover:text-violet-400" href="#">Privacy Policy</a>
+        <a class="m-4 hover:text-violet-400" href="#">Terms & Conditions</a>
+      </nav>
+      <div>
+        <p>© 2024 Bats Cave</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="./js/app.js"></script>
 
 </body>
