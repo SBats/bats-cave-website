@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-titan-one {
-  font-family: 'Titan One', sans-serif;
+.font-title {
+  font-family: 'Teko', sans-serif;
+}
+
+.dithered {
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/dithering.png');
+  background-repeat: repeat-x;
 }
