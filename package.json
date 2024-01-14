@@ -1,6 +1,20 @@
 {
   "name": "bats-cave-website",
-  "source": "src/index.html",
+  "source": [
+    "src/index.html",
+    "src/terms-and-conditions.html",
+    "src/privacy-policy.html",
+    "src/404.html",
+    "src/robots.txt"
+  ],
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    },
+    "production": {
+      "distDir": "./build"
+    }
+  },
   "version": "0.0.1",
   "description": "",
   "private": false,
@@ -12,8 +26,8 @@
   "license": "MIT",
   "author": "Simon Bats",
   "scripts": {
-    "start": "parcel src/*.html src/*.txt",
-    "build": "parcel build src/*.html src/*.txt"
+    "start": "parcel",
+    "build": "rm -rf dist/* && parcel build --target production"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.11.0",
